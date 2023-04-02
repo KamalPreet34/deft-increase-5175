@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Try For Free</title>
+    <link rel="stylesheet" href="../css/navbar.css">
+    <style>
+        body{
+            background-color: #15171C;
+        }
+
+       #navbar+div{
+            background-color: grey;
+           
+            margin: auto;
+            width:30%;
+            text-align: center;
+        }
+        #navbar+div>h1{
+            font-size: 100px;
+        }
+        #navbar+div button{
+            width:200px;
+            height:80px;
+            border-radius: 20px;
+            font-size: 30px;
+            background-color: rgb(246, 138, 130);
+            border:0px;
+            color: white;
+        }
+        #navbar+div button:hover{
+            color: #15171C;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="navbar"></div>
+    <div>
+        <h1>Take a free trial</h1>
+    <h3>Access gyms & At-home workouts</h3>
+    <div>
+        <h1> 7 Days Live Trial</h1>
+       <a href="cultlive.html"><button>Register Now</button></a> 
+    </div>
+    </div>
+    
+
+    
+</body>
+</html>
+<script type="module">
+    import {navbar,getLocation} from "../componants/navbar.js";
+    document.querySelector("#navbar").innerHTML=navbar();
+    window.onload=getLocation();
+
+</script>
